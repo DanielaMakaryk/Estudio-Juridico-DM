@@ -2,10 +2,6 @@
 Plataforma Web Corporativa y de Gestión de Identidad Digital desarrollada de forma profesional para Estudio Jurídico. Proyecto enfocado en la presencia institucional y consultoría legal (2024).
 
 
-# Estudio-Juridico ⚖️🏢
-
-Plataforma Web Corporativa y de Gestión de Identidad Digital desarrollada de forma profesional para Estudio Jurídico. Proyecto enfocado en la presencia institucional y consultoría legal (2024).
-
 # Estudio Jurídico ⚖️✨
 
 Plataforma web corporativa e institucional diseñada para la gestión de marca digital, servicios legales y atención al ciudadano.
