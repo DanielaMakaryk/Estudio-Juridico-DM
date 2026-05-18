@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudio Jurídico DM & Asociados - Versión Oro Final</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --marron-cuero: #3E2723;
+            --amarillo-oro: #FFD700; 
+            --dorado-viejo: #D4AF37;
+            --crema: #FFF9F2;
+            --blanco: #FFFFFF;
+        }
+
+        body {
+            margin: 0;
+            /* UNIFICADA A SERIF CLÁSICA */
+            font-family: 'Playfair Display', serif;
+            background-color: var(--crema);
+            color: #212121;
+        }
+
+        header {
+            background: var(--blanco);
+            padding: 0.8rem 4%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo-container { display: flex; align-items: center; gap: 8px; }
+        
+        .balanza-logo {
+            font-size: 32px;
+            color: var(--amarillo-oro);
+            filter: drop-shadow(0px 2px 2px rgba(0,0,0,0.2));
+        }
+
+        .logo-texto {
+            font-style: italic;
+            font-weight: 700;
+            font-size: clamp(0.85rem, 3.2vw, 1.4rem);
+            color: var(--marron-cuero);
+            margin: 0;
+            white-space: nowrap;
+        }
+
+        nav a {
+            text-decoration: none !important;
+            color: var(--marron-cuero) !important;
+            font-style: italic;
+            font-weight: 700;
+            font-size: clamp(0.75rem, 2.5vw, 1.1rem);
+            margin-left: 10px;
+            transition: 0.3s;
+        }
+        nav a:hover { color: var(--amarillo-oro) !important; }
+
+        .hero {
+            height: 420px;
+            background-color: var(--marron-cuero);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            border-bottom: 6px solid var(--dorado-viejo);
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .hero-content {
+            animation: zoomAndGold 3.5s forwards;
+            z-index: 2;
+        }
+
+        @keyframes zoomAndGold {
+            0% { transform: scale(0.7); opacity: 0; color: white; }
+            50% { transform: scale(1); opacity: 1; color: white; }
+            100% { transform: scale(1.02); color: var(--amarillo-oro); }
+        }
+
+        .hero-titulo {
+            font-style: italic;
+            font-size: clamp(1.8rem, 6vw, 3.5rem);
+            margin: 0;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.7);
+        }
+
+        .balanza-central {
+            font-size: 120px; 
+            color: var(--amarillo-oro);
+            margin-top: 20px;
+            filter: drop-shadow(0 0 15px rgba(255, 215, 0, 0.8)) drop-shadow(2px 2px 0px #000);
+            opacity: 0;
+            animation: fadeIn 1s 3.5s forwards;
+        }
+
+        @keyframes fadeIn { to { opacity: 1; } }
+
+        .grid-causas {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 40px 5%;
+        }
+
+        .card {
+            background: var(--blanco);
+            padding: 25px;
+            width: 280px;
+            border-radius: 4px;
+            text-align: center;
+            transition: 0.4s;
+            border-top: 6px solid var(--marron-cuero);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+
+        .card h3 {
+            font-style: italic;
+            font-size: 1.6rem;
+            margin-bottom: 10px;
+        }
+
+        .card p { font-size: 1.1rem; }
+
+        .card:hover {
+            transform: translateY(-8px);
+            border-top-color: var(--amarillo-oro);
+        }
+        .card:hover h3 { color: var(--dorado-viejo); }
+
+        .contact-form {
+            max-width: 650px;
+            margin: 60px auto;
+            background: var(--blanco);
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: 0 15px 50px rgba(0,0,0,0.1);
+            text-align: center;
+            width: 85%;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 18px;
+            margin: 15px 0;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-sizing: border-box;
+            font-family: 'Playfair Display', serif;
+            font-size: 1.1rem;
+        }
+
+        .btn-submit {
+            background: var(--marron-cuero);
+            color: white;
+            padding: 20px;
+            width: 100%;
+            border: none;
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            font-weight: 700;
+            font-size: 1.5rem;
+            cursor: pointer;
+            transition: 0.3s;
+            border-radius: 10px;
+        }
+        .btn-submit:hover { background: var(--dorado-viejo); color: var(--marron-cuero); }
+
+        footer {
+            background: #1B110F;
+            color: #ccc;
+            text-align: center;
+            padding: 30px;
+            font-style: italic;
+        }
+
+        #s-box { text-align: center; padding: 40px; }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo-container">
+        <span class="balanza-logo">⚖️</span>
+        <h1 class="logo-texto">Estudio Jurídico DM & Asociados</h1>
+    </div>
+    <nav>
+        <a href="#causas">Causas</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <h2 class="hero-titulo">Estudio Jurídico <br> DM & Asociados</h2>
+        <p style="color: white; letter-spacing: 2px; margin-top: 10px; font-size: 0.9rem;">COMPROMISO • INTEGRIDAD • JUSTICIA</p>
+    </div>
+    <div class="balanza-central">⚖️</div>
+</section>
+
+<div class="grid-causas" id="causas">
+    <div class="card"><h3>Civil</h3><p>Sucesiones, Desalojos y Contratos.</p></div>
+    <div class="card"><h3>Familia</h3><p>Divorcios, Alimentos y Tenencia.</p></div>
+    <div class="card"><h3>Laboral</h3><p>Despidos y Accidentes de Trabajo.</p></div>
+    <div class="card"><h3>Jubilaciones</h3><p>Moratorias y Tramitaciones.</p></div>
+    <div class="card"><h3>Comercial</h3><p>Concursos y Quiebras.</p></div>
+    <div class="card"><h3>Penal</h3><p>Causas derivadas de Civil y Familia.</p></div>
+    <div class="card" style="border-top-color: var(--dorado-viejo);">
+        <h3>Asesoría Integral</h3>
+        <p>Consultas preventivas y personalizadas.</p>
+    </div>
+</div>
+
+<section class="contact-form" id="contacto">
+    <div id="f-box">
+        <h2 style="color: var(--marron-cuero); font-style: italic; font-size: 2.2rem;">Consultas Profesionales</h2>
+        <input type="text" placeholder="Nombre y Apellido">
+        <input type="email" placeholder="Correo Electrónico">
+        <textarea rows="6" placeholder="¿En qué podemos ayudarle?"></textarea>
+        <button class="btn-submit" onclick="enviarLegal()">Enviar Consulta</button>
+    </div>
+    <div id="s-box" style="display:none; padding: 40px;">
+        <span style="font-size: 7rem; color: var(--amarillo-oro); filter: drop-shadow(2px 2px 2px #000);">⚖️</span>
+        <h2 style="color: var(--marron-cuero); font-style: italic;">Consulta enviada</h2>
+        <p>A la brevedad un profesional lo contactará.</p>
+    </div>
+</section>
+
+<footer>
+    <p>Estudio Jurídico DM & Asociados - Avellaneda, Buenos Aires</p>
+    <p>© 2024 | Derechos Reservados</p>
+</footer>
+
+<script>
+    function enviarLegal() {
+        document.getElementById('f-box').style.display = 'none';
+        document.getElementById('s-box').style.display = 'block';
+    }
+</script>
+
+</body>
+</html>
+
+      
