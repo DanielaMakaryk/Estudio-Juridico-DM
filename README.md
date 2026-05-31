@@ -1,5 +1,5 @@
 # Estudio-Juridico-DM
-Plataforma Web Corporativa desarrollada para Estudio Jurídico DM & Asociados. Presencia institucional y consultoría legal (2025).
+Plataforma Web Corporativa desarrollada para Estudio Jurídico DM & Asociados. Presencia institucional y consultoría legal (2024).
 
 
 # Estudio Jurídico DM & Asociados ⚖️✨
@@ -17,4 +17,4 @@ Plataforma web corporativa e institucional diseñada para la gestión de marca d
 * JavaScript puro (Interactividad fluida en el área de usuario).
 
 ---
-*Proyecto profesional de desarrollo web integral realizado para Estudio Jurídico (Año 2025).*
+*Proyecto profesional de desarrollo web integral realizado para Estudio Jurídico (Año 2024).*
